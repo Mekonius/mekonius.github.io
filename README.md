@@ -1,37 +1,18 @@
-# :musical_note: My Spotify Library :notes:
+# Vue 3 + TypeScript + Vite
 
-Welcome to My Spotify Library! This is a fun project that I created to explore the Spotify API and build a simple web app that lets me view my Spotify library.
+This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
 
-## :rocket: Getting Started
+## Recommended IDE Setup
 
-To get started, simply clone this repository and install the dependencies:
+- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
 
-Once you've installed the dependencies, you can start the development server:
+## Type Support For `.vue` Imports in TS
 
-```
-npm run dev
-```
-This will start a local development server at `http://localhost:3000` where you can view the app.
+TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
 
-## :tada: Features
+If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
 
-My Spotify Library has a number of fun features that you can use to explore your Spotify library:
-
-- **View your saved albums:** See all of the albums you've saved to your Spotify library.
-- **Filter and search:** Use the search bar to filter and search through your library.
-- **Play tracks and albums:** Click on a track or album to play it directly in Spotify.
-- **Responsive design:** The app is designed to look great on desktop and mobile devices.
-
-## :robot: Tech Stack
-
-My Spotify Library is built with the following technologies:
-
-- **JavaScript:** The app is built entirely with vanilla JavaScript.
-- **Spotify API:** The app uses the Spotify API to access your library and play music.
-- **Node.js:** The app is built on a Node.js backend.
-- **Express:** The app uses the Express framework to handle HTTP requests.
-- **Webpack:** The app is bundled with Webpack.
-
-## :memo: Contributing
-
-I hope you enjoy exploring your Spotify library with My Spotify Library. If you have any questions or feedback, feel free to reach out to me on Twitter (@yourusername). Thanks for checking out my project! :musical_note:
+1. Disable the built-in TypeScript Extension
+   1. Run `Extensions: Show Built-in Extensions` from VSCode's command palette
+   2. Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
+2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
